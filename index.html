@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beast NG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/sharp-sans" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/samsung-sharp-sans" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+                
+
+</head>
+<body>
+
+<section class="main">
+        <nav>
+           <a href="#" class="logo"> <img src="images/beast-logo-white.png"></a>
+           
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+
+           <ul class="menu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+
+           <div class="nav-socials">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+           </div>
+
+        </nav>
+</section>
+
+<!------ Main Content ------->
+
+<div class="home-content">
+    <div class="home-text">
+        <h1>We Are <span class="auto-input"></span></h1>
+        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus</p>
+        <a href="" class="main-login">Get Started</a>
+    </div>
+    <div class="home-img">
+        <img src="images/icon-home.png" alt="">
+    </div>
+</div>
+
+<!-----------Services Menu ------->
+
+<section class="services">
+    <div class="services-header">
+        <h2>Our Services</h2>
+        <p>This is the place where you will get the premium services you need to run your business.</p>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <img src="Images/icon-home.png">
+            <h3>Talent Management</h3>
+            <p>We bring life to your craft as a music artiste. That's just the way it goes. Work with us now or forget.</p>
+        </div>
+
+        <div class="box">
+            <img src="Images/icon-home.png">
+            <h3>Talent Management</h3>
+            <p>We bring life to your craft as a music artiste. That's just the way it goes. Work with us now or forget.</p>
+        </div>
+
+        <div class="box">
+            <img src="Images/icon-home.png">
+            <h3>Talent Management</h3>
+            <p>We bring life to your craft as a music artiste. That's just the way it goes. Work with us now or forget.</p>
+        </div>
+        
+        <div class="box">
+            <img src="Images/icon-home.png">
+            <h3>Talent Management</h3>
+            <p>We bring life to your craft as a music artiste. That's just the way it goes. Work with us now or forget.</p>
+        </div>
+
+        <div class="box">
+            <img src="Images/icon-home.png">
+            <h3>Talent Management</h3>
+            <p>We bring life to your craft as a music artiste. That's just the way it goes. Work with us now or forget.</p>
+        </div>
+
+        <div class="box">
+            <img src="Images/icon-home.png">
+            <h3>Talent Management</h3>
+            <p>We bring life to your craft as a music artiste. That's just the way it goes. Work with us now or forget.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-----------------Contact Form Session -------------->
+
+<section class="contact">
+  <div class="wrapper">
+      <img src="Images/contact-us-img.png">
+    <h2>Contact Us</h2>
+    <p>That's just the way it goes. Work with us now or forget. We bring life to your craft as a music artiste. That's just the way it goes. Work with us now or forget</p>
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <h3>Get In Touch</h3>
+      <input type="text" id="name" placeholder="Your name" required>
+      <input type="text" id="email" placeholder="Your email" required>
+      <input type="text" id="phone" placeholder="Your number" required>
+      <textarea id="message" rows="4" placeholder="Your message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+          Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "popesoph@gmail.com",
+          Password : "Tracyenagie1@",
+          To : 'popesoph@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : "New Contact Form Enquiry",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+</script>
+
+
+<!------------ Footer ----------->
+
+<section class="footer">
+    <div class="footer-container">
+        <div class="footer-img">
+            <img src="Images/beast-logo-white.png">
+            <p>© 2022, Beast NG. All Rights Reserved.</p>
+        </div>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["Beast NG.", "Music.", "Talent.", "ANR.", "Culture."],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+</script>
+    
+</body>
+
+
+
+<script src="script.js"></script>
+</html>
